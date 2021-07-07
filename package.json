@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "precommit": "git-format-staged -f prettier-standard '*.js'"
+    "json-server": "json-server __json_server_mock__/db.json --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +48,7 @@
     "eslint-config-prettier": "^8.3.0",
     "git-format-staged": "^2.1.2",
     "husky": "^7.0.0",
+    "json-server": "^0.16.3",
     "lint-staged": "^11.0.0"
   },
   "husky": {

@@ -3,7 +3,7 @@ import {
     useState
 } from "react"
 
-export const isFalsy = (value: number) => value === 0 ? false : !value
+export const isFalsy = (value: unknown) => value === 0 ? false : !value
 
 export const cleanObject = (object: object) => {
     const result = {
@@ -27,7 +27,7 @@ export const useMount = (callback: () => void) => {
     }, [])
 }
 
-export const useDebounce = (value: any, delay?: number) => {
+export const useDebounce = (value: unknown, delay?: number) : any => {
     const [debouncedValue, setDebouncedValue] = useState(value)
     // 每次在value变化以后，设置一个定时器
     useEffect(() => {
